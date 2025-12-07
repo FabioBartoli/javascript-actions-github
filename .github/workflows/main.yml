@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v5
       - name: Hello world action step
         id: hello
         uses: ./.github/actions/js-greeting

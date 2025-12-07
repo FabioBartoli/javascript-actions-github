@@ -12,6 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+
+      - name: Install Dependencies
+        run: npm install @actions/core @actions/github
+
       - name: Hello world action step
         id: hello
         uses: ./.github/actions/js-greeting
